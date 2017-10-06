@@ -6,6 +6,8 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload
+activate :directory_indexes
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

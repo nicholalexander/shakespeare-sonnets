@@ -3,10 +3,9 @@ title: Shakespeare's Sonnets
 ---
 
 <ul class="list pa3 pa5-ns">
-  
-  <% 1.upto 16 do |index| %>
+  <% Array(1..154).shuffle.each do |index| %>
     <li class="dib mr2">
-      <%= link_to "#{index}", "/sonnets/#{index}.html", 
+      <%= link_to "#{index.to_words.downcase}", "/sonnets/#{index}.html", 
         class: "f3 link hover-dark-blue b no-underline black dib ph2 pv1" %> 
     </li>
   <% end %>
