@@ -10,7 +10,11 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
+  <body class="bg-near-white">
+    <header>
+      <%= partial "partials/header" %>
+    </header>
     <%= yield %>
+    <%= partial "partials/footer" %>
   </body>
 </html>
